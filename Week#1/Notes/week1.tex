@@ -1,0 +1,109 @@
+\documentclass[a4paper]{article}
+
+
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[compat=1.0.0]{tikz-feynman}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{subfig}
+
+\title{REYES Nuclear Physics Mentoring Week 1}
+\author{Aman Kumar}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+We began the lecture with an introduction to the basic forces of nature namely : \\
+\begin{enumerate}
+    \item Gravitational Force
+    \item Electromagnetic force 
+    \item Strong nuclear force [QCD]
+    \item Weak nuclear force
+\end{enumerate}
+
+Then we discussed about the standard model and the types of particles. There are two types of particles : Fermions and Bosons. 
+
+\subsection{Fermions}
+Fermions are the particles that make up the matter and have following properties: 
+\begin{enumerate}
+    \item Follow Fermi–Dirac statistics.
+    \item Have half odd integer spin such as $\dfrac{1}{2}$, $\dfrac{3}{2}$ , $\dfrac{n + 1}{2}$.
+    \item  Obey the Pauli exclusion principle.
+\end{enumerate} 
+
+Fermions include all quarks and leptons, as well as all composite particles made of an odd number of these.Some fermions are elementary particles, such as the electrons, and some are composite particles, such as the protons.\\
+
+In addition to the spin characteristic, fermions have another specific property: they possess conserved baryon or lepton quantum numbers.\\
+
+\textbf{Note} :  At low temperature fermions show superfluidity for uncharged particles and superconductivity for charged particles. 
+
+\subsection{Bosons}
+Bosons are the particles that ususally make up the force carriers. They have following properties:
+\begin{enumerate}
+    \item Follow Bose–Einstein statistics.
+    \item Have integer spin (s = 0, 1, 2, etc.).
+    \item  There is no restriction on the number of them that occupy the same quantum state.
+\end{enumerate} 
+
+Bosons may be either elementary, like photons, or composite, like mesons. 
+
+\section{Quantum Chromodynamics}
+Quantum chromodynamics (QCD) is the theory of the strong interaction between quarks and gluons, the fundamental particles that make up composite hadrons such as the proton, neutron and pion.\\
+
+The QCD analog of electric charge is a property called color.\\
+
+The dynamics of the quarks and gluons are controlled by the quantum chromodynamics Lagrangian. The gauge invariant QCD Lagrangian is : \\
+
+\begin{math}
+L_{QCD}=\Bar{\psi}_i(i\gamma^{\mu}(D_{\mu})_{ij}−m\delta_{ij})\psi_j−\dfrac{1}{4}G^{a}_{\mu \nu}G^{\mu \nu}_a
+\end{math}
+
+\subsection{Notes}
+\begin{enumerate}
+    \item Quarks and Gluons carry \emph{colours}.
+    \item Quarks come in six different \emph{flavours}.
+    \item Gluons have \emph{no} mass.
+    \item In quantum chromodynamics (QCD), color confinement, often simply called confinement, is the phenomenon that color-charged particles (such as quarks and gluons) cannot be isolated, and therefore cannot be directly observed in normal conditions below the Hagedorn temperature of approximately 2 terakelvin (corresponding to energies of approximately 130–140 MeV per particle). \textbf{The confinement is basically to colour-neutral bound states like: Red + Blue + Green or Red + Anti Red}
+\end{enumerate}
+
+
+\section{Feynman Diagram}
+In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and interaction of subatomic particles.\\
+
+A Feynman diagram represents a perturbative contribution to the amplitude of a quantum transition from some initial quantum state to some final quantum state.\\
+
+For example, in the process of electron-positron annihilation the initial state is one electron and one positron, the final state: two photons.\\
+
+\begin{center}
+\begin{tabular}{c}
+\feynmandiagram[horizontal=a to b]{
+i1[particle = $e^{-}$] -- [fermion] a -- [photon] i2,
+a--[fermion] b,
+f1 -- [photon] b -- [fermion] f2[particle = $e^{+}$],
+};\\
+Electron Positron annihilation. \emph{Time is moving up.}\\
+\end{tabular}    
+\end{center}
+
+\section{Lattice QCD}
+After all these general discussions we discussed about Lattice QCD whihch is different from perturbative qcd. Here no assumptions are made. 
+It is a numerical analysis method where a super computer uses standard Model at it is without any approximations and solve for the solution numerically.
+
+\subsection{Defintion}
+Lattice QCD is a well-established non-perturbative approach to solving the quantum chromodynamics (QCD) theory of quarks and gluons. It is a lattice gauge theory formulated on a grid or lattice of points in space and time. When the size of the lattice is taken infinitely large and its sites infinitesimally close to each other, the continuum QCD is recovered.
+\end{document}
+
+
