@@ -1,0 +1,63 @@
+\documentclass[a4paper]{article}
+
+
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[compat=1.0.0]{tikz-feynman}
+\usepackage{listings}
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{subfig}
+
+\title{REYES Nuclear Physics Mentoring Week 4}
+\author{Aman Kumar}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+This week learned about QCD spectroscopy and using data from Particle Data Group (PDG). The goal of QCD spectroscopy is to determine the states and 
+properties of excited states as well as the intermediate states. When the excited state decays into multiparticle states, each decay channel 
+has its own probability while conserving some fundamental properties like charge, energy, momentum, and spin. QCD spectroscopy helps us to study these channels. 
+\\
+Particle Data Group(PDG) is a reliable source for information about all the particles observed. 
+
+\section{Mesonic Spectrum in PDG}
+\begin{center}
+    \begin{tabular}{c c c c c}
+        Particle & Mass & Lifetime & Decay Channel & Force Involved \\
+        $\pi^+ / \pi^-$ & 140MeV & $3 * 10^{-8}s$ & $\mu^+ \nu_\mu (~100\%)$  & weak \\
+        $\pi^0$ & 135MeV & $9 * 10^{-17}s$ & $2 \gamma (99\%)$ & QED \\
+        $\eta$ & 550MeV & $5 * 10^{-19}s$ & $2 \gamma(39\%) , 3 \pi^0 (32\%) , \pi^+ \pi^- \pi^0 (23\%)$ & $QED,QCD,QCD$ \\
+    \end{tabular}
+\end{center}
+
+The General conclusion which we drew from the data above and more data is that, if a particle has very prominent decay channels 
+through very strong forces like QCD, the lifetime of the particle is usually shorter. So, the Standard Model without Weak forces or QED is sometimes
+used as a model to further syudy QCD decays since it is the most difficult one to study, due to the very short lifetimes of the particles.
+\\
+Also if a particle has enough energy or mass to go to simpler forms, it'll decay. 
+\\
+The simplified standard model has no decay channels due to weak forces or QED.
+\\
+The heavier the particle is, the larger the number of channels through which it can decays as there are more intermediate states possible to reach.
+An example is, $f_0(980)$ with a mass of around 990MeV. Due to its heavy mass, it can decay into two kaons or two pions. Both having energy lower than it.
+
+\section{More info}
+Further more we learnt about Hadronic resonances and different resonant reactions are studied at different research labs along with the represntation of the mass matrix 
+used in scattering amplitude analysis.
+
+\end{document}
